@@ -14,3 +14,107 @@
   margin-right: 0.5rem;
   padding: 0.5rem;
 } */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+body {
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'),
+              linear-gradient(180deg, #f6e3c5 0%, #e2b679 100%);
+  background-blend-mode: overlay;
+}
+
+
+h1 {
+  text-align: center;
+  color: #5a3e2b;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+.bookCardsDiv {
+  display: flex;
+  flex-direction: row; /* 👈 makes books line up horizontally */
+  flex-wrap: wrap;     /* allows wrapping if too many books */
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 6px solid #8b4513; /* dark brown shelf plank */
+  border-bottom: 6px solid #8b4513;
+  width: 100%;
+  justify-content: center;
+  background: #fff8dc;
+}
+
+.bookCardsDiv {
+  display: flex;
+  flex-wrap: wrap;  /* books keep flowing in the row */
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 6px solid #8b4513; /* dark brown shelf plank */
+  border-bottom: 6px solid #8b4513;
+  width: 100%;
+  justify-content: center;
+  background: #fff8dc; /* light cream behind books */
+}
+
+.bookCard {
+  width: 120px;
+  height: 180px;
+  background: linear-gradient(135deg, #d2691e, #cd853f); /* leather book feel */
+  border: 2px solid #8b4513;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.bookCard:hover {
+  transform: scale(1.05) rotate(-2deg);
+  cursor: pointer;
+}
+
+.formDiv {
+  background: #fff;
+  padding: 1rem;
+  border: 2px solid #b5651d;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.formDiv input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 200px;
+}
+
+
+.formDiv button {
+  padding: 0.5rem 1rem;
+  background: #b5651d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.formDiv button:hover {
+  background: #8b4513;
+}
