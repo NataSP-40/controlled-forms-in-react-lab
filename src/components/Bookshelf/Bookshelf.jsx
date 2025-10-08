@@ -30,7 +30,7 @@ const Bookshelf = () => {
 
         <div className="bookshelfDiv">
             <div className="formDiv">
-                <h3>Add a Book</h3>
+                {/* <h3>Add a Book</h3> */}
                 {/* Form will go here */}
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="title" value={newBook.title} onChange={handleInputChange} placeholder="Book Title" /> <br/>
